@@ -1,0 +1,7 @@
+service : {
+    "get_rarity_score": (text) -> (vec vec float64) query;
+    "get_rarity_rank": (text) -> (vec vec float64) query;
+    "get_trait_independence": (text) -> (vec vec float64) query;
+    "get_trait_cramersv": (text) -> (vec vec float64) query;
+    "get_trait_normalize": (text) -> (vec vec float64) query;
+}

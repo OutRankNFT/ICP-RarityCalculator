@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>OnChain Calculator</title>
+    <link type="text/css" rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main>
+      <img src="./logo2.svg" alt="DFINITY logo" />
+      <br />
+      <br />
+      <form action="#">
+        <div class="form">
+          <label for="name">Input Canister ID: &nbsp;</label>
+          <input id="name" alt="Name" type="text" />
+        </div>
+        <div class="form">
+          <label for="name">Input Your Data &nbsp;: &nbsp;</label>
+          <textarea id="data" placeholder='If you inputed canisterID, this will be ignore. Input data as Object Array. [{"name":"cat","key":"KejfHdI"},{"name":"dog","key":"SEhei3JD"},...]' rows="5" alt="Name" type="text" ></textarea>
+        </div>
+        <div class="form">
+          <button type="submit" id="score">Rarity Score</button>
+          <button type="submit" id="normalize">Rarity Score - Trait Normalized</button>
+          <button type="submit" id="rank">Rarity Rank</button>
+          <button type="submit" id="cramersv">Trait CramersV</button>
+          <button type="submit" id="independence">Triat Independence</button>
+          </div>
+      </form>
+      <div id="type"></div>
+      <div id="resultcontainer">
+      </div>
+    </main>
+    </body>
+    <script src="./index.js">
+  </script>
+</html>

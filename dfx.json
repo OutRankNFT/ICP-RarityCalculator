@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "calculator_backend": {
+      "candid": "src/calculator_backend/calculator_backend.did",
+      "package": "calculator_backend",
+      "type": "rust"
+    },
+    "calculator_frontend": {
+      "dependencies": [
+        "calculator_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/calculator_frontend/src/index.html"
+      },
+      "source": [
+        "src/calculator_frontend/assets",
+        "dist/calculator_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
